@@ -1,5 +1,7 @@
 # OpenJev
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/GitHub30/OpenJev/blob/main/notebooks/OpenJev_Quickstart.ipynb)
+
 オープンウェイト LLM で動く **System One モデル** の実装です。TypeSafe AI の
 [Jev](https://typesafe.ai/blog/introducing-system-one-models-and-jev) と同じ考え方
 —「テキストを生成するのではなく、型付きの質問に対して確率分布を返す」— を、
@@ -19,11 +21,18 @@ Hugging Face 上の任意の instruct モデル (Qwen, Llama, Gemma, SmolLM な�
 ## インストール
 
 ```bash
+git clone https://github.com/GitHub30/OpenJev.git
+cd OpenJev
 uv venv && uv pip install -e ".[hf,server,dev]"
 # GPU なら PyTorch は CUDA 版を先に入れてください
 ```
 
 ## 使い方
+
+### Google Colab で試す
+
+上の **Open In Colab** バッジ ([notebooks/OpenJev_Quickstart.ipynb](notebooks/OpenJev_Quickstart.ipynb)) を開き、GPU ランタイムで上から実行してください
+(A100/L4 なら Qwen2.5-7B、T4 なら 1.5B を自動選択。推論 → 評価/校正 → API サーバー + 公式 SDK → LoRA 微調整まで一通り動きます)。
 
 ### Python から
 
