@@ -244,6 +244,6 @@ LoRA 微調整も同じノートブックで動作確認しています (16 件�
 - QLoRA 対応 (14B 以上を Colab で学習するため)
 - llama.cpp / vLLM バックエンド
 
-コードは Apache-2.0 で公開しています。Issue / PR 歓迎です。
+コードは MIT ライセンスで公開しています。Issue / PR 歓迎です。
 
 https://github.com/GitHub30/OpenJev

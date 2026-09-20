@@ -171,4 +171,4 @@ OPENJEV_TEST_MODEL=HuggingFaceTB/SmolLM2-135M-Instruct pytest tests/test_hf_back
 
 ## ライセンス
 
-Apache-2.0
+MIT
